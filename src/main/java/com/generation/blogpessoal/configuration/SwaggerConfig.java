@@ -13,7 +13,7 @@ import io.swagger.v3.oas.models.responses.ApiResponse;
 import io.swagger.v3.oas.models.responses.ApiResponses;
 
 @Configuration
-public class SwaggerCoonfig 
+public class SwaggerConfig 
 {
 	@Bean
 	OpenAPI springBlogPessoalOpenAPI() 
@@ -37,6 +37,7 @@ public class SwaggerCoonfig
 	{
 		return new ApiResponse().description(message);
 	}
+	
 	
 	@Bean
 	OpenApiCustomizer customerGlobalHeaderOpenAPICustomiser() 
